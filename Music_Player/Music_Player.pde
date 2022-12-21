@@ -17,10 +17,11 @@ void setup () {
 }//End setup
 //
 void draw () {}//End draw
-//
+// 
 void keyPressed () {
  if( key=='P' || key=='p') song1.play(); //Parameter is milli-seconds from start of audio file to start playing 
- if ( key=='L' || key=='l') song1.loop(0); //Parameter is Parameter is number of repeats 
+ int loopNum = 2; //Local Variable plays once and loops twice
+ if ( key=='L' || key=='l') song1.loop(loopNum); //Parameter is Parameter is number of repeats 
 }//End keyPressed
 //
 void mouseClicked () {}//End mousePressed
